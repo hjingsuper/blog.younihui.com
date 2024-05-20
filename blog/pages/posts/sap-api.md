@@ -136,3 +136,13 @@ public class SAPService
 }
 
 ```
+
+## config配置
+
+```xml
+
+<startup useLegacyV2RuntimeActivationPolicy="true">
+	<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+</startup>
+
+```
