@@ -6,17 +6,26 @@ top: 1
 categories: code
 tags:
   - c#
-  - code
 ---
+
+# c#调用SAP接口
 
 ## SAP DLL
 
 [网盘下载：https://pan.baidu.com/s/1S6yEodJn_9tnjjO1I9_-hg?pwd=bx7f](https://pan.baidu.com/s/1S6yEodJn_9tnjjO1I9_-hg?pwd=bx7f)
 
+
+## config配置
+
+```xml
+<startup useLegacyV2RuntimeActivationPolicy="true">
+	<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+</startup>
+```
+
 ## 配置SAP连接参数
 
 ```csharp
-
 public class DestinationConfig : IDestinationConfiguration
 {
 
@@ -49,13 +58,11 @@ public class DestinationConfig : IDestinationConfiguration
 
     public event RfcDestinationManager.ConfigurationChangeHandler ConfigurationChanged;
 }
-
 ```
 
 ## 调用SAP接口
 
 ```csharp
-
 public class SAPService
 {
     var dc = new DestinationConfig();
@@ -134,15 +141,4 @@ public class SAPService
         }
     }
 }
-
-```
-
-## config配置
-
-```xml
-
-<startup useLegacyV2RuntimeActivationPolicy="true">
-	<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
-</startup>
-
 ```

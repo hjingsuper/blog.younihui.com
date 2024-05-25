@@ -15,15 +15,22 @@ export default defineSiteConfig({
   subtitle: '',
   social: [
     {
-      name: 'QQ 547504571',
-      icon: 'i-ri-qq-line',
-      color: '#12B7F5',
-    },
-    {
       name: 'GitHub',
       link: 'https://github.com/hjingsuper',
       icon: 'i-ri-github-line',
       color: '#6e5494',
+    },
+
+    {
+      name: 'codepen',
+      link: 'https://codepen.io/hjingsuper',
+      icon: 'i-ri-codepen-line',
+      color: '#FF8EB3',
+    },
+    {
+      name: 'QQ 547504571',
+      icon: 'i-ri-qq-line',
+      color: '#12B7F5',
     },
     {
       name: '哔哩哔哩',
@@ -31,7 +38,6 @@ export default defineSiteConfig({
       icon: 'i-ri-bilibili-line',
       color: '#FF8EB3',
     },
-
   ],
 
   search: {

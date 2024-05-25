@@ -6,8 +6,9 @@ top: 1
 categories: code
 tags:
   - js
-  - code
 ---
+
+# BOM计算总重量
 
 ## 解决方案
 
@@ -25,7 +26,8 @@ function calculateWeight(node) {
 
 ## 示例
 
-```js
+```javascript
+// BOM 树结构
 const bomTree =
   {
     pid: 0,
