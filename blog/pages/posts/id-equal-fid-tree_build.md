@@ -10,18 +10,15 @@ tags:
 
 # 子等于父 树结构生成
 
-> 正常情况下最顶层的pid不是0就是null，特殊业务下id可能等于fid
+> 正常情况下最顶层的pid不是0就是null，特殊业务下id可能等于fid，id重复存在不同的fid下
 
 ```csharp
 //实体
 public class Tree
 {
-
-   [SqlSugar.SugarColumn(IsPrimaryKey =true)]
    public int Id { get; set; } //关联字段 默认是主键
    public string Name { get; set; }
    public int ParentId { get; set; }//父级字段
-   [SqlSugar.SugarColumn(IsIgnore = true)]
    public List<Tree> Child { get; set; }
 }
 
